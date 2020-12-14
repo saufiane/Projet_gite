@@ -43,6 +43,7 @@ body {
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
+
 }
 .marketing h2 {
   font-weight: 400;
@@ -52,7 +53,9 @@ body {
   margin-left: .75rem;
 }
 
-
+.rond{
+border-radius: 600px;
+}
 /* Featurettes
 ------------------------- */
 
@@ -63,7 +66,7 @@ body {
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
-  line-height: 1;
+  line-height: 3;
   letter-spacing: -.05rem;
 }
 
