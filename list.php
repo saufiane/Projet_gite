@@ -9,7 +9,7 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d',strtot
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-10 align-self-end mb-4" style="background: #0000002e;">
-                    	 <h1 class="text-uppercase text-white font-weight-bold">Rooms</h1>
+                    	 <h1 class="text-uppercase text-white font-weight-bold">Gites</h1>
                         <hr class="divider my-4" />
                     </div>
                     
@@ -26,16 +26,16 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d',strtot
 									<form action="index.php?page=list" id="filter" method="POST">
 			        					<div class="row">
 			        						<div class="col-md-3">
-			        							<label for="">Chech-in Date</label>
+			        							<label for="">Date d'arrivée</label>
 			        							<input type="text" class="form-control datepicker" name="date_in" autocomplete="off" value="<?php echo isset($date_in) ? date("Y-m-d",strtotime($date_in)) : "" ?>">
 			        						</div>
 			        						<div class="col-md-3">
-			        							<label for="">Chech-out Date</label>
+			        							<label for="">Heure d'arrivée</label>
 			        							<input type="text" class="form-control datepicker" name="date_out" autocomplete="off" value="<?php echo isset($date_out) ? date("Y-m-d",strtotime($date_out)) : "" ?>">
 			        						</div>
 			        						<div class="col-md-3">
 			        							<br>
-			        							<button class="btn-btn-block btn-primary mt-3">Check Availability</button>
+			        							<button class="btn-btn-block btn-primary mt-3">Verifier la Disponibilté</button>
 			        						</div>
 
 			        					</div>
@@ -63,13 +63,13 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d',strtot
 									<img src="assets/img/<?php echo $cat_arr[$row['category_id']]['cover_img'] ?>" alt="">
 								</div>
 								<div class="col-md-5" height="100%">
-									<h3><b><?php echo '$ '.number_format($cat_arr[$row['category_id']]['price'],2) ?></b><span> / per day</span></h3>
+									<h3><b><?php echo '$ '.number_format($cat_arr[$row['category_id']]['price'],2) ?></b><span> / par jour</span></h3>
 
 									<h4><b>
 										<?php echo $cat_arr[$row['category_id']]['name'] ?>
 									</b></h4>
 									<div class="align-self-end mt-5">
-										<button class="btn btn-primary  float-right book_now" type="button" data-id="<?php echo $row['category_id'] ?>">Book now</button>
+										<button class="btn btn-primary  float-right book_now" type="button" data-id="<?php echo $row['category_id'] ?>">Reserver maintenant</button>
 									</div>
 								</div>
 							</div>

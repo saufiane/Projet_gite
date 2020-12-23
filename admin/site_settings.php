@@ -13,19 +13,19 @@ if($qry->num_rows > 0){
 		<div class="card-body">
 			<form action="" id="manage-settings">
 				<div class="form-group">
-					<label for="name" class="control-label">Hotel Name</label>
+					<label for="name" class="control-label">Nom du Gite</label>
 					<input type="text" class="form-control" id="name" name="name" value="<?php echo isset($meta['hotel_name']) ? $meta['hotel_name'] : '' ?>" required>
 				</div>
 				<div class="form-group">
-					<label for="email" class="control-label">Hotel email</label>
+					<label for="email" class="control-label">Email du Gite</label>
 					<input type="email" class="form-control" id="email" name="email" value="<?php echo isset($meta['email']) ? $meta['email'] : '' ?>" required>
 				</div>
 				<div class="form-group">
-					<label for="contact" class="control-label">Hotel Contact</label>
+					<label for="contact" class="control-label">Numéro de téléphone	</label>
 					<input type="text" class="form-control" id="contact" name="contact" value="<?php echo isset($meta['contact']) ? $meta['contact'] : '' ?>" required>
 				</div>
 				<div class="form-group">
-					<label for="about" class="control-label">Hotel About Content</label>
+					<label for="about" class="control-label">A propos du Gite</label>
 					<textarea name="about" class="text-jqte"><?php echo isset($meta['about_content']) ? $meta['about_content'] : '' ?></textarea>
 
 				</div>
@@ -37,7 +37,7 @@ if($qry->num_rows > 0){
 					<img src="<?php echo isset($meta['cover_img']) ? '../assets/img/'.$meta['cover_img'] :'' ?>" alt="" id="cimg">
 				</div>
 				<center>
-					<button class="btn btn-info btn-primary btn-block col-md-2">Save</button>
+					<button class="btn btn-info btn-primary btn-block col-md-2">Sauvegarder</button>
 				</center>
 			</form>
 		</div>

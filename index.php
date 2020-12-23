@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <?php
     session_start();
     include('header.php');
@@ -31,9 +31,9 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=list">Rooms</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=home">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=list">Gites</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=about">A propos de nous</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,8 +55,8 @@
         <div id="delete_content"></div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id='confirm' onclick="">Continue</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id='confirm' onclick="">Continuer</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
       </div>
       </div>
     </div>
@@ -70,14 +70,14 @@
       <div class="modal-body">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id='submit' onclick="$('#uni_modal form').submit()">Save</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id='submit' onclick="$('#uni_modal form').submit()">Valider</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
       </div>
       </div>
     </div>
   </div>
         <footer class="bg-light py-5">
-            <div class="container"><div class="small text-center text-muted">Hotel Mangement system | <a href="https://1sourcecodr.blogspot.com/" target="_blank">1 SOURCE CODE</a></div></div>
+            <div class="container"><div class="small text-center text-muted"> Gite De Montereau | J.I_Sau&So <a href="https://1sourcecodr.blogspot.com/" target="_blank"></a></div></div>
         </footer>
         
        <?php include('footer.php') ?>

@@ -43,23 +43,23 @@ while($row = $cat->fetch_assoc()){
 
 
 		<div class="form-group">
-			<label for="name">Name</label>
+			<label for="name">Nom</label>
 			<input type="text" name="name" id="name" class="form-control" value="<?php echo isset($meta['name']) ? $meta['name']: '' ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="contact">Contact #</label>
+			<label for="contact">N° de Contact</label>
 			<input type="text" name="contact" id="contact" class="form-control" value="<?php echo isset($meta['contact_no']) ? $meta['contact_no']: '' ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="date_in">Check-in Date</label>
+			<label for="date_in">Date d'arrivée</label>
 			<input type="date" name="date_in" id="date_in" class="form-control" value="<?php echo isset($meta['date_in']) ? date("Y-m-d",strtotime($meta['date_in'])): date("Y-m-d") ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="date_in_time">Check-in Date</label>
+			<label for="date_in_time">Date de départ</label>
 			<input type="time" name="date_in_time" id="date_in_time" class="form-control" value="<?php echo isset($meta['date_in']) ? date("H:i",strtotime($meta['date_in'])): date("H:i") ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="days">Days of Stay</label>
+			<label for="days">Durée du Séjour</label>
 			<input type="number" min ="1" name="days" id="days" class="form-control" value="<?php echo isset($meta['date_in']) ? $calc_days: 1 ?>" required>
 		</div>
 	</form>
@@ -74,7 +74,7 @@ while($row = $cat->fetch_assoc()){
 			data:$(this).serialize(),
 			success:function(resp){
 				if(resp >0){
-					alert_toast("Data successfully saved",'success')
+					alert_toast("Gite enregistré avec succès")
 					uni_modal("Check-in Details","manage_check_out.php?id="+resp)
 					setTimeout(function(){
 					end_load()

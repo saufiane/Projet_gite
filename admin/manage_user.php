@@ -12,15 +12,15 @@ foreach($user->fetch_array() as $k =>$v){
 	<form action="" id="manage-user">
 		<input type="hidden" name="id" value="<?php echo isset($meta['id']) ? $meta['id']: '' ?>">
 		<div class="form-group">
-			<label for="name">Name</label>
+			<label for="name">Nom</label>
 			<input type="text" name="name" id="name" class="form-control" value="<?php echo isset($meta['name']) ? $meta['name']: '' ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="username">Username</label>
+			<label for="username">Nom d'utilisateur</label>
 			<input type="text" name="username" id="username" class="form-control" value="<?php echo isset($meta['username']) ? $meta['username']: '' ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="password">Password</label>
+			<label for="password">Mot de passe</label>
 			<input type="password" name="password" id="password" class="form-control" value="<?php echo isset($meta['password']) ? $meta['id']: '' ?>" required>
 		</div>
 		<div class="form-group">

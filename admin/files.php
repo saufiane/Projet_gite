@@ -75,8 +75,8 @@ a.custom-menu-list span.icon{
 		</div>
 
 		<div class="row">
-			<button class="btn btn-primary btn-sm" id="new_folder"><i class="fa fa-plus"></i> New Folder</button>
-			<button class="btn btn-primary btn-sm ml-4" id="new_file"><i class="fa fa-upload"></i> Upload File</button>
+			<button class="btn btn-primary btn-sm" id="new_folder"><i class="fa fa-plus"></i> Nouveau Fichier</button>
+			<button class="btn btn-primary btn-sm ml-4" id="new_file"><i class="fa fa-upload"></i> Télécharger un Fichier</button>
 		</div>
 		<hr>
 		<div class="row">
@@ -91,7 +91,7 @@ a.custom-menu-list span.icon{
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12"><h4><b>Folders</b></h4></div>
+			<div class="col-md-12"><h4><b>Fichiers</b></h4></div>
 		</div>
 		<hr>
 		<div class="row">
@@ -111,7 +111,7 @@ a.custom-menu-list span.icon{
 				<div class="card-body">
 					<table width="100%">
 						<tr>
-							<th width="40%" class="">Filename</th>
+							<th width="40%" class="">Nom du fichier</th>
 							<th width="20%" class="">Date</th>
 							<th width="40%" class="">Description</th>
 						</tr>
@@ -154,13 +154,13 @@ a.custom-menu-list span.icon{
 	</div>
 </div>
 <div id="menu-folder-clone" style="display: none;">
-	<a href="javascript:void(0)" class="custom-menu-list file-option edit">Rename</a>
-	<a href="javascript:void(0)" class="custom-menu-list file-option delete">Delete</a>
+	<a href="javascript:void(0)" class="custom-menu-list file-option edit">Renommer</a>
+	<a href="javascript:void(0)" class="custom-menu-list file-option delete">Supprimer</a>
 </div>
 <div id="menu-file-clone" style="display: none;">
-	<a href="javascript:void(0)" class="custom-menu-list file-option edit"><span><i class="fa fa-edit"></i> </span>Rename</a>
-	<a href="javascript:void(0)" class="custom-menu-list file-option download"><span><i class="fa fa-download"></i> </span>Download</a>
-	<a href="javascript:void(0)" class="custom-menu-list file-option delete"><span><i class="fa fa-trash"></i> </span>Delete</a>
+	<a href="javascript:void(0)" class="custom-menu-list file-option edit"><span><i class="fa fa-edit"></i> </span>Renommer</a>
+	<a href="javascript:void(0)" class="custom-menu-list file-option download"><span><i class="fa fa-download"></i> </span>Télécharger</a>
+	<a href="javascript:void(0)" class="custom-menu-list file-option delete"><span><i class="fa fa-trash"></i> </span>Supprimer</a>
 </div>
 
 <script>
@@ -300,7 +300,7 @@ a.custom-menu-list span.icon{
 			data:{id:$id},
 			success:function(resp){
 				if(resp == 1){
-					alert_toast("Folder successfully deleted.",'success')
+					alert_toast("Gite supprimé avec succès.")
 						setTimeout(function(){
 							location.reload()
 						},1500)
@@ -316,7 +316,7 @@ a.custom-menu-list span.icon{
 			data:{id:$id},
 			success:function(resp){
 				if(resp == 1){
-					alert_toast("Folder successfully deleted.",'success')
+					alert_toast("Gite supprimé avec succès.")
 						setTimeout(function(){
 							location.reload()
 						},1500)
